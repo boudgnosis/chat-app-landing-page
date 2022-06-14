@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Chat app landing page</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="./assets/icon/favicon-32x32.png" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- NORMALIZE -->
+	<link rel="stylesheet" href="./css/normalize.css">
+	<!-- FONT: Rubik -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+	<!-- IONICONS -->
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" defer></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+	<!-- STYLES -->
+	<link rel="stylesheet" href="./css/style.css">
+	<!-- RESPONSIVE -->
+	<link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+	<div class="background__form"></div>
+	<main class="container">
+		<div class="phone__app">
+			<div class="header__app">
+				<ion-icon class="row" name="chevron-back-outline"></ion-icon>
+				<div class="img__avar">
+					<img src="./assets/imgs/avatar.jpg" alt="Photo of a person with glasses, scarf and brown coat."
+						Loading="eager">
+				</div>
+				<div class="name__status">
+					<p class="name">Samuel Green</p>
+					<p class="status">Availiable to Walk</p>
+				</div>
+				<ion-icon class="menu" name="ellipsis-vertical-outline"></ion-icon>
+			</div>
+			<div class="chat">
+				<p class="first__chat chats__styles">That sounds great. I'd be happy with that.</p>
+				<p class="second__chat chats__styles">Coul your send over some pictures of your dog, please?</p>
+				<div class="chat__right">
+					<div class="dogs">
+						<img src="./assets/imgs/dog-image-1.jpg"
+							alt="Photo of brown dog in which only part of the neck and the whole head can be seen with the tongue out."
+							Loading="eager">
+					</div>
+					<div class="dogs dog__two">
+						<img src="./assets/imgs/dog-image-2.jpg"
+							alt="Full body photo of dog looking towards the camera with tongue out, it is brown in color and has a collar."
+							loading="eager">
+					</div>
+					<div class="dogs">
+						<img src="./assets/imgs/dog-image-3.jpg"
+							alt="Photo of full body dog holding a large branch, it is brown in color and has a collar."
+							loading="eager">
+					</div>
+				</div>
+				<div class="chat__right chat__flex-column">
+					<p class="right__message">Here are a few pictures. She's a happy girl!!</p>
+					<br>
+					<p class="right__message-two">Can you make it?</p>
+				</div>
+				<p class="x__chat chats__styles">She looks so happy!The time we discussed workds. How long shall I take her our
+					for</p>
+				<p class="prices">
+					<ion-icon name="ellipse-outline"></ion-icon>
+					30 minutes walk
+					<span class="price price__one">$29</span>
+				</p>
+				<p class="prices">
+					<ion-icon name="ellipse-outline"></ion-icon>
+					1 hour walk
+					<span class="price price__two">$49</span>
+				</p>
+			</div>
+			<form class="send__box">
+				<input type="text" placeholder="Type a message...">
+				<ion-icon name="chevron-forward-outline"></ion-icon>
+			</form>
+		</div>
+		<div class="information">
+			<h1 class="title">Simple booking</h1>
+			<p class="text__information">
+				Stay in touch with our dog walkers through the cat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
+			</p>
+		</div>
+	</main>
+</body>
+
+</html>

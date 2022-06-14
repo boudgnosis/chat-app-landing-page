@@ -1,0 +1,318 @@
+:root {
+	/* COLORS */
+	/* Primary */
+	/* text */
+	--Pale-Violet: hsl(276, 100%, 81%); /* (sub-heading at the top of the app UI) */
+	--Moderate-Violet: hsl(276, 55%, 52%); /*  (chat on the left) */
+	--Desaturated-Dark-Violet: hsl(271, 15%, 43%); /* (chat on the right) */
+	--Grayish-Blue: hsl(206, 6%, 79%); /*  (placeholder text) */
+	--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%); /*  (main heading) */
+	--Dark-Grayish-Violet: hsl(270, 7%, 64%); /* (paragraph) */
+	/* gradients -  linear gradient applied to the background */
+	--Light-Magenta: hsl(293, 100%, 63%);
+	--Light-Violet: hsl(264, 100%, 61%);
+	/* Secondary */
+	--White: hsl(0, 0%, 100%);
+	--Light-Grayish-Violet: hsl(270, 20%, 96%); /*  (app background) */
+	--Very-Dark-Desaturated-Violet: hsl(271, 36%, 24%); /*  (submit button background) */
+	--Very-Light-Magenta: hsl(289, 100%, 72%); /* (radio button outline) */
+	--Light-Pale-VIolet: hsla(276, 100%, 81%, 0.251);
+	/* FONT */
+	--Rubik: 'Rubik', sans-serif; /* 400 500 700 */
+}
+
+body {
+	min-height: 100vh;
+	font-size: 1em;
+	font-family: var(--Rubik);
+	background-color: var(--Light-Grayish-Violet);
+}
+
+img {
+	display: block;
+}
+
+.background__form {
+	width: 23rem;
+	height: 36rem;
+	background: linear-gradient(to top right,var(--Light-Violet), var(--Light-Magenta));
+	border-radius: 0 0 12.5rem 12.5rem;
+	-webkit-border-radius: 0 0 12.5rem 12.5rem;
+	-moz-border-radius: 0 0 12.5rem 12.5rem;
+	-ms-border-radius: 0 0 12.5rem 12.5rem;
+	-o-border-radius: 0 0 12.5rem 12.5rem;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.phone__app {
+	position: relative;
+	top: 4rem;
+	left: 20rem;
+	width: 360px;
+	height: 500px;
+	outline: .8rem solid var(--White);
+	background-color: var(--Light-Grayish-Violet);
+	box-shadow: 0.125rem 0.125rem 1.875rem 0.625rem rgba(0,0,0,.2);
+	border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+	-webkit-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+	-moz-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+	-ms-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+	-o-border-radius: 1.25rem 1.25rem 1.25rem 1.25rem;
+}
+
+.phone__app .header__app {
+	display: flex;
+	align-items: center;
+	padding: 1rem .5rem;
+	background: linear-gradient(to right,var(--Light-Violet), var(--Light-Magenta));
+	border-radius: 20px 20px 6px 6px;
+	-webkit-border-radius: 20px 20px 6px 6px;
+	-moz-border-radius: 20px 20px 6px 6px;
+	-ms-border-radius: 20px 20px 6px 6px;
+	-o-border-radius: 20px 20px 6px 6px;
+}
+
+.phone__app::after {
+  content: "";
+  width: 55%;
+  height: 2.5%;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom-left-radius: 0.9rem;
+  border-bottom-right-radius: 0.9rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.phone__app .header__app .row {
+	color: var(--White);
+	padding: .1rem;
+	font-size: 1.1em;
+}
+
+.phone__app .header__app .row:hover {
+	background: linear-gradient(to top right,var(--Light-Violet), var(--Light-Magenta));
+}
+
+.phone__app .header__app .row:hover,
+.phone__app .header__app .menu:hover {
+	box-shadow: 1px 1px 7px 2px rgba(0,0,0,.1);
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+.phone__app .header__app .row:active,
+.phone__app .header__app .menu:active {
+	transform: scale(.9);
+	-webkit-transform: scale(.9);
+	-moz-transform: scale(.9);
+	-ms-transform: scale(.9);
+	-o-transform: scale(.9);
+}
+
+.phone__app .header__app .name__status p{
+	margin: 0;
+}
+
+.phone__app .header__app .name__status .name {
+	font-size: .8em;
+	font-weight: 500;
+	margin-bottom: .3rem;
+	color: var(--White);
+}
+
+.phone__app .header__app .name__status .status {
+	font-size: .6em;
+	font-weight: 400;
+	color: var(--Light-Grayish-Violet);
+}
+
+.phone__app .header__app .menu {
+	position: relative;
+	right: -3rem;
+	font-size: 1.1em;
+	padding: .1rem;
+	color: var(--White);
+}
+
+.phone__app .header__app .menu:hover {
+	background: linear-gradient(to bottom right,var(--Light-Violet), var(--Light-Magenta));
+}
+
+.phone__app .header__app .img__avar img {
+	width: 1.8rem;
+	margin: 0 .8rem 0 .2rem;
+	border: 1px solid var(--White);
+	border-radius: 3.125rem;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+.chat {
+	padding: .5rem;
+	border-radius: 0 0 .4rem .4rem;
+	-webkit-border-radius: 0 0 .4rem .4rem;
+	-moz-border-radius: 0 0 .4rem .4rem;
+	-ms-border-radius: 0 0 .4rem .4rem;
+	-o-border-radius: 0 0 .4rem .4rem;
+	}
+
+.chats__styles {
+	width: 22ch;
+	font-size: .6em;
+	padding: .5rem;
+	color: var(--Moderate-Violet);
+	background-color: var(--Light-Pale-VIolet);
+	border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+	-webkit-border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+	-moz-border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+	-ms-border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+	-o-border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+}
+
+.chat__right {
+	display: flex;
+	justify-content: end;
+}
+
+.dog__two {
+	margin: 0 .5rem;
+}
+
+.chat__right .dogs img {
+	width: 3rem;
+	margin-top: 1rem;
+	border-radius: 0.5rem;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+}
+
+.chat .chat__flex-column {
+	flex-direction: column;
+	align-items: end;
+}
+
+.chat .right__message,
+.chat .right__message-two {
+	padding: .5em;
+	background-color: var(--White);
+	color: var(--Desaturated-Dark-Violet);
+	box-shadow:1px 2px 5px 1px rgba(0,0,0,.1);
+	border-radius: .75rem .75rem .25rem .75rem;
+	-webkit-border-radius: .75rem .75rem .25rem .75rem;
+	-moz-border-radius: .75rem .75rem .25rem .75rem;
+	-ms-border-radius: .75rem .75rem .25rem .75rem;
+	-o-border-radius: .75rem .75rem .25rem .75rem;
+}
+
+.chat .right__message {
+	font-size: .6em;
+	font-weight: 400;
+	width: 22ch;	
+}
+
+.chat .right__message-two{
+	font-size: .6em;
+	width: max-content;
+	margin: 0;
+}
+
+.chat .prices {
+	display: flex;
+	align-items: center;
+	font-size: .5em;
+	color: var(--White);
+	background: linear-gradient(to right, var(--Light-Magenta), var(--Light-Violet));
+	padding: .5rem;
+	width: 60%;
+	border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+	-webkit-border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+	-moz-border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+	-ms-border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+	-o-border-radius: 0.75rem 0.75rem 0.75rem 0.25rem;
+}
+
+.chat .prices ion-icon {
+	margin-right: .3rem;
+}
+
+.chat .prices .price {
+	font-weight: 700;
+}
+
+.chat .prices .price__one {
+	margin-left: 1.8rem;
+}
+
+.chat .prices .price__two {
+	margin-left: 3rem;
+}
+
+.phone__app .send__box {
+	position: relative;
+	display: flex;
+	flex-direction: center;
+	justify-content: center;
+}
+
+.phone__app .send__box input {
+	border: none;
+	font-size: .6em;
+	padding: .5rem .5rem;
+	width: 13rem;
+	border-radius: 3.125rem;
+	-webkit-border-radius: 3.125rem;
+	-moz-border-radius: 3.125rem;
+	-ms-border-radius: 3.125rem;
+	-o-border-radius: 3.125rem;
+}
+
+.phone__app .send__box ion-icon {
+	position: absolute;
+	right: 1.1rem;
+	top: .3rem;
+	font-size: 1.1em;
+	color: var(--White);
+	background-color: var(--Very-Dark-Desaturated-Violet);
+	border-radius: 3.125rem;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+}
+
+.phone__app .send__box ion-icon:active {
+	transform: scale(.9);
+}
+
+.information .title {
+	position: relative;
+	left: 24.5rem;
+	width: max-content;
+	color: var(--Very-Dark-Desaturated-Violet);
+}
+
+.information .text__information {
+	position: relative;
+	left: 24.5rem;
+	margin-top: 2rem;
+	line-height: 1.5;
+	color: var(--Dark-Grayish-Violet);
+	width: 40%;
+}

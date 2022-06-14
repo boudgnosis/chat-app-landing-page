@@ -1,0 +1,76 @@
+@media screen and (min-width:320px) and (max-width: 768px) {
+	.background__form {
+		width: 10rem;
+		height: 34rem;
+		border-radius: 0 0 10rem 0;
+		-webkit-border-radius: 0 0 10rem 0;
+		-moz-border-radius: 0 0 10rem 0;
+		-ms-border-radius: 0 0 10rem 0;
+		-o-border-radius: 0 0 10rem 0;
+}
+
+	.container {
+		flex-direction: column;
+	}
+
+	.phone__app {
+		top: 5rem;
+		left: 00rem;
+		width: 200px;
+		height: 480px;
+	}
+	
+	.phone__app .header__app .row {
+		font-size: .9em;
+	}
+
+	.phone__app .header__app .img__avar img {
+		margin: 0 .4rem 0 .19rem;
+	}
+
+	.phone__app .header__app .name__status .name {
+		font-size: .65em;
+		margin-bottom: .1rem;
+	}
+
+	.phone__app .header__app .name__status .status {
+		font-size: .5em;
+	}
+
+	.phone__app .header__app .menu {
+		font-size: .9em;
+		right: -2rem;
+	}
+
+	.chat__right .dogs img {
+		width: 2.2rem;
+	}
+
+	.chat .prices .price__one {
+		margin-left: 1rem;
+	}
+	
+	.chat .prices .price__two {
+		margin-left: 2.3rem;
+	}
+
+	.phone__app .send__box input {
+		width: 11rem;
+	}
+
+	.information .title {
+		top: 8rem;
+		left: 0;
+		text-align: center;
+		width: 100%;
+	}
+	
+	.information .text__information {
+		top: 8rem;
+		left: 0;
+		padding-bottom: 3rem;
+		text-align: center;
+		font-size: .8em;
+		width: 30ch;
+	}
+}
