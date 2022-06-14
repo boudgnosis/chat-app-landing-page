@@ -36,8 +36,8 @@ Los usuarios deben ser capaces de:
 
 ### Enlaces
 
-- URL de la solución (Frontend Mentor): [Solución en Frontend Mentor](https://www.frontendmentor.io/solutions/accessibility-flexbox-responsive-transitions-K7J2nLziI5)
-- URL del sitio en vivo: [En vivo](https://boudgnosis.github.io/fylo-landing-page/)
+- URL de la solución (Frontend Mentor): [Solución en Frontend Mentor](https://www.frontendmentor.io/solutions/flexbox-transitions-responsive-accessibility-XSNVolZFYM)
+- URL del sitio en vivo: [En vivo](https://boudgnosis.github.io/chat-app-landing-page/)
 
 ## Mi Proceso
 
